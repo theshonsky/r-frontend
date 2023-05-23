@@ -24,7 +24,7 @@ const Products = () => {
       {loading ? (
         <h1>Loading...</h1>
       ) : (
-        products.map((product) => <h1 key={product.id}>{product.title}</h1>)
+        products.map((product) => <h1 key={product.id}>{product.title}: {product.price} {product.currency}</h1>)
       )}
     </div>
   );
