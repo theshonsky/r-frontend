@@ -1,22 +1,76 @@
 {
   "products": [
     {
-      "id": 1,
       "title": "Product 1",
-      "price": 1000,
-      "currency": "KZT"
+      "price": 100,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Leonardo566pin_500x.png?v=1619393997",
+      "id": 1
     },
     {
-      "id": 2,
       "title": "Product 2",
-      "price": 10,
-      "currency": "USD"
+      "price": 200,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Raphael569pin_500x.png?v=1619394645",
+      "id": 2
     },
     {
-      "id": 3,
       "title": "Product 3",
-      "price": 1500,
-      "currency": "KZT"
+      "price": 300,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Donatello568pin_500x.png?v=1619393910",
+      "id": 3
+    },
+    {
+      "title": "Product 4",
+      "price": 400,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Michaelangelo567pin_500x.png?v=1619394173",
+      "id": 4
+    },
+    {
+      "title": "Product 5",
+      "price": 100,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Leonardo566pin_500x.png?v=1619393997",
+      "id": 5
+    },
+    {
+      "title": "Red Turtle",
+      "price": 200,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Raphael569pin_500x.png?v=1619394645",
+      "id": 6
+    },
+    {
+      "title": "Purple Turtle",
+      "price": 300,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Donatello568pin_500x.png?v=1619393910",
+      "id": 7
+    },
+    {
+      "title": "Orange Turtle",
+      "price": 400,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Michaelangelo567pin_500x.png?v=1619394173",
+      "id": 8
+    },
+    {
+      "title": "Blue Turtle",
+      "price": 100,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Leonardo566pin_500x.png?v=1619393997",
+      "id": 9
+    },
+    {
+      "title": "Red Ninja",
+      "price": 200,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Raphael569pin_500x.png?v=1619394645",
+      "id": 10
+    },
+    {
+      "title": "Purple Ninja",
+      "price": 300,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Donatello568pin_500x.png?v=1619393910",
+      "id": 11
+    },
+    {
+      "title": "Orange Ninja",
+      "price": 400,
+      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Michaelangelo567pin_500x.png?v=1619394173",
+      "id": 12
     }
   ]
 }

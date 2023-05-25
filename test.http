@@ -1,4 +1,4 @@
 ## Get Products
-GET http://127.0.0.1:3000/products HTTP/1.1
+GET http://localhost:3000/products/?_page=2&_limit=4&_sort=price&_order=asc HTTP/1.1
 
 ### Get Product
