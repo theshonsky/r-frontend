@@ -5,7 +5,7 @@ const Home = () => {
   const [number, setNumber] = useState(0);
 
   useEffect(() => {
-    alert("Number has changed");
+    console.log("Number has changed");
   }, [number]);
 
   const handleClick = () => {

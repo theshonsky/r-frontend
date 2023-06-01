@@ -12,7 +12,7 @@ const Card = ({ product }) => {
           <h3 className="card__title">{product.title}</h3>
         </div>
         <div className="card__footer">
-          <div className="card__price">${product.price}</div>
+          <div className="card__price">{product.price} KZT</div>
         </div>
       </Link>
     </div>

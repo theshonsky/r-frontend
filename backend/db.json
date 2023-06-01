@@ -1,76 +1,174 @@
 {
   "products": [
     {
-      "title": "Product 1",
-      "price": 100,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Leonardo566pin_500x.png?v=1619393997",
-      "id": 1
+      "title": "The Legend of Zelda: Breath of Wild",
+      "price": 28940,
+      "img": "https://basket-02.wb.ru/vol270/part27051/27051762/images/big/1.jpg",
+      "id": 1,
+      "categoryId": 1
     },
     {
-      "title": "Product 2",
-      "price": 200,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Raphael569pin_500x.png?v=1619394645",
-      "id": 2
+      "title": "The Legend of Zelda: Tears of the Kingdom",
+      "price": 38340,
+      "img": "https://basket-11.wb.ru/vol1609/part160915/160915644/images/big/1.jpg",
+      "id": 2,
+      "categoryId": 1
     },
     {
-      "title": "Product 3",
-      "price": 300,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Donatello568pin_500x.png?v=1619393910",
-      "id": 3
+      "title": "Super Mario Odyssey",
+      "price": 28490,
+      "img": "https://basket-07.wb.ru/vol1062/part106269/106269496/images/big/1.jpg",
+      "id": 3,
+      "categoryId": 1
     },
     {
-      "title": "Product 4",
-      "price": 400,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Michaelangelo567pin_500x.png?v=1619394173",
-      "id": 4
+      "title": "Splatoon 2",
+      "price": 25160,
+      "img": "https://basket-02.wb.ru/vol261/part26179/26179607/images/big/1.jpg",
+      "id": 4,
+      "categoryId": 1
     },
     {
-      "title": "Product 5",
-      "price": 100,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Leonardo566pin_500x.png?v=1619393997",
-      "id": 5
+      "title": "Bayonetta 3",
+      "price": 27360,
+      "img": "https://basket-10.wb.ru/vol1465/part146586/146586162/images/big/1.jpg",
+      "id": 5,
+      "categoryId": 1
     },
     {
-      "title": "Red Turtle",
-      "price": 200,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Raphael569pin_500x.png?v=1619394645",
-      "id": 6
+      "title": "Splatoon 3",
+      "price": 28440,
+      "img": "https://basket-06.wb.ru/vol1014/part101428/101428432/images/big/1.jpg",
+      "id": 6,
+      "categoryId": 1
     },
     {
-      "title": "Purple Turtle",
-      "price": 300,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Donatello568pin_500x.png?v=1619393910",
-      "id": 7
+      "title": "Animal Crossing: New Horizons",
+      "price": 28530,
+      "img": "https://basket-10.wb.ru/vol1338/part133888/133888486/images/big/1.jpg",
+      "id": 7,
+      "categoryId": 1
     },
     {
-      "title": "Orange Turtle",
-      "price": 400,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Michaelangelo567pin_500x.png?v=1619394173",
-      "id": 8
+      "title": "Pokemon Violet",
+      "price": 26980,
+      "img": "https://basket-10.wb.ru/vol1430/part143003/143003287/images/big/1.jpg",
+      "id": 8,
+      "categoryId": 2
     },
     {
-      "title": "Blue Turtle",
-      "price": 100,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Leonardo566pin_500x.png?v=1619393997",
-      "id": 9
+      "title": "Pokemon Sword",
+      "price": 18550,
+      "img": "https://basket-10.wb.ru/vol1457/part145736/145736832/images/big/1.jpg",
+      "id": 9,
+      "categoryId": 2
     },
     {
-      "title": "Red Ninja",
-      "price": 200,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Raphael569pin_500x.png?v=1619394645",
-      "id": 10
+      "title": "Persona 5 Royal",
+      "price": 32450,
+      "img": "https://basket-10.wb.ru/vol1414/part141417/141417823/images/big/1.jpg",
+      "id": 10,
+      "categoryId": 5
     },
     {
-      "title": "Purple Ninja",
-      "price": 300,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Donatello568pin_500x.png?v=1619393910",
-      "id": 11
+      "title": "Pokemon Shield ",
+      "price": 18720,
+      "img": "https://basket-10.wb.ru/vol1398/part139849/139849983/images/big/1.jpg",
+      "id": 11,
+      "categoryId": 2
     },
     {
-      "title": "Orange Ninja",
-      "price": 400,
-      "img": "https://cdn.shopify.com/s/files/1/2528/8830/products/Michaelangelo567pin_500x.png?v=1619394173",
-      "id": 12
+      "title": "Pokemon Scarlet",
+      "price": 31400,
+      "img": "https://basket-10.wb.ru/vol1430/part143003/143003224/images/big/1.jpg",
+      "id": 12,
+      "categoryId": 2
+    },
+    {
+      "title": "Pokmon: Let's Go, Pikachu!",
+      "price": 28010,
+      "img": "https://basket-10.wb.ru/vol1439/part143969/143969960/images/big/1.jpg",
+      "id": 13,
+      "categoryId": 2
+    },
+    {
+      "title": "Monster Hunter Rise Deluxe Edition",
+      "price": 27520,
+      "img": "https://basket-10.wb.ru/vol1414/part141417/141417817/images/big/1.jpg",
+      "id": 14,
+      "categoryId": 4
+    },
+    {
+      "title": "Dark Souls : Remastered",
+      "price": 20980,
+      "img": "https://basket-09.wb.ru/vol1221/part122145/122145354/images/big/1.jpg",
+      "id": 15,
+      "categoryId": 3
+    },
+    {
+      "title": "Pokemon Legends: Arceus",
+      "price": 29670,
+      "img": "https://basket-04.wb.ru/vol620/part62077/62077251/images/big/1.jpg",
+      "id": 16,
+      "categoryId": 2
+    },
+    {
+      "title": "Super Smash Bros Ultimate",
+      "price": 34320,
+      "img": "https://basket-02.wb.ru/vol261/part26158/26158526/images/big/1.jpg",
+      "id": 17,
+      "categoryId": 1
+    },
+    {
+      "title": "Metroid Dread",
+      "price": 29100,
+      "img": "https://basket-05.wb.ru/vol926/part92623/92623680/images/big/1.jpg",
+      "id": 18,
+      "categoryId": 1
+    },
+    {
+      "title": "Pokemon Brilliant Diamond",
+      "price": 24100,
+      "img": "https://basket-04.wb.ru/vol491/part49113/49113632/images/big/1.jpg",
+      "id": 19,
+      "categoryId": 2
+    },
+    {
+      "title": "Mario Kart 8 Deluxe",
+      "price": 28840,
+      "img": "https://basket-05.wb.ru/vol940/part94058/94058194/images/big/1.jpg",
+      "id":20,
+      "categoryId": 1
+    },
+    {
+      "title": "The Legend of Zelda: Link's Awakening",
+      "price": 29760,
+      "img": "https://basket-05.wb.ru/vol974/part97468/97468003/images/big/1.jpg",
+      "id": 21,
+      "categoryId": 1
+    }
+  ],
+  "categories":[
+    {
+      "title": "Nintendo",
+      "id":1
+    },
+    {
+      "title": "The Pokémon Company",
+      "id":2
+    },
+    {
+      "title": "From Software",
+      "id":3
+    },
+    {
+      "title": "Capcom",
+      "id":4
+    },
+    {
+      "title": "Atlus",
+      "id":5
     }
   ]
 }
+

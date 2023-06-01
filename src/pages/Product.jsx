@@ -21,8 +21,6 @@ const Product = () => {
     setLoading(false);
   };
 
-  const nextPage = () =>{n++}
-
   return (
     <div>
       <Navbar />
@@ -32,7 +30,6 @@ const Product = () => {
       ) : (
         <Card product={product} />
       )}
-      
     </div>
   );
 };

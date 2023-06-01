@@ -1,78 +1,61 @@
 import Card from "../components/Card/Card";
 import Navbar from "../components/Navbar";
 import productsController from "../controller/products";
-import { useEffect } from "react";
-import { useState } from "react";
-
-let currentPage = 1
-let type = false
+import { useEffect, useRef, useState } from "react";
+import { useSearchParams, useLocation } from "react-router-dom";
+import { paramsToObject } from "../utils/routerUtils";
+import Pagination from "../components/Pagination/Pagination";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [params, setParams] = useSearchParams();
+  const { search } = useLocation();
+  const [productTotalCount, setProductTotalCount] = useState(null);
+  const searchRef = useRef(null);
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+  }, [search]);
+
+  const updateParams = (key, value) => {
+    setParams((prevParams) => {
+      const params = new URLSearchParams(prevParams);
+      params.set(key, value);
+      return params;
+    });
+  };
 
   const fetchProducts = async () => {
     setLoading(true);
-    if(type == 'asc'){
-      const { data } = await productsController.sortAscProducts(currentPage);
-      setProducts(data);
+    productsController.getProducts(paramsToObject(params)).then((res) => {
+      setProductTotalCount(res.headers["x-total-count"]);
+      setProducts(res.data);
       setLoading(false);
-    }else if(type == 'desc'){
-      const { data } = await productsController.sortDescProducts(currentPage);
-      setProducts(data);
-      setLoading(false);
-    }else{
-      const { data } = await productsController.getProducts(currentPage);
-      setProducts(data);
-      setLoading(false);
-    }
-    
+    });
   };
-
-  const nextPage = () =>{
-    currentPage++;
-    fetchProducts();
-  }
-
-  const previousPage = () =>{
-    if(currentPage>1){
-      currentPage--;
-      fetchProducts();
-    }
-  }
-
-  const sortAsc = () =>{
-    type = 'asc'
-    currentPage = 1
-    fetchProducts();
-  }
-
-  const sortDesc = () =>{
-    type = 'desc'
-    currentPage = 1
-    fetchProducts();
-  }
 
   return (
     <div>
       <Navbar />
       <h1>Products</h1>
-      <button onClick={previousPage}>Previous</button>
-      <button onClick={nextPage}>Next</button>
-      <button onClick={sortAsc}>Sort by asc</button>
-      <button onClick={sortDesc}>Sort by desc</button>
-      <h2>Page: {currentPage}</h2>
+      <input type="text" ref={searchRef} defaultValue={params.get("q") || ""} />
+      <button onClick={() => updateParams("q", searchRef.current.value)}>Search</button>
+      {params.get("q") ? <p>Result for {params.get("q")}</p> : null}
+
       {loading ? (
         <h1>Loading...</h1>
       ) : (
         products.map((p) => <Card key={p.id} product={p} />)
       )}
-      <button onClick={previousPage}>Previous</button>
-      <button onClick={nextPage}>Next</button>
+
+      {productTotalCount ? (
+        <Pagination
+          totalPages={Math.ceil(productTotalCount / 10)}
+          currentPage={parseInt(params.get("_page")) || 1}
+          onPageChange={(page) => updateParams("_page", page)}
+        />
+      ) : null}
     </div>
   );
 };
