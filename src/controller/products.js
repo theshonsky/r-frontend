@@ -9,6 +9,14 @@ const productsController = {
       },
     });
   },
+  async getProductByCategoty(CategoryId, params=null) {
+    return await axios.get(`http://localhost:3000/categories/${CategoryId}/products`, {
+      params: params || {
+        _page: 1,
+        _limit: 10,
+      },
+    });
+  },
 
   async getProduct(id) {
     return await axios.get(`http://localhost:3000/products/${id}`);

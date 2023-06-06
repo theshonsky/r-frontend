@@ -26,13 +26,24 @@ const Products = () => {
     });
   };
 
+  let CategoryId = false
+
   const fetchProducts = async () => {
-    setLoading(true);
-    productsController.getProducts(paramsToObject(params)).then((res) => {
+    if (CategoryId){
+      setLoading(true);
+      productsController.getProductByCategoty(CategoryId, paramsToObject(params)).then((res) => {
       setProductTotalCount(res.headers["x-total-count"]);
       setProducts(res.data);
       setLoading(false);
     });
+    }else{
+      setLoading(true);
+      productsController.getProducts(paramsToObject(params)).then((res) => {
+      setProductTotalCount(res.headers["x-total-count"]);
+      setProducts(res.data);
+      setLoading(false);
+    });
+  }
   };
 
   return (
@@ -42,7 +53,16 @@ const Products = () => {
       <input type="text" ref={searchRef} defaultValue={params.get("q") || ""} />
       <button onClick={() => updateParams("q", searchRef.current.value)}>Search</button>
       {params.get("q") ? <p>Result for {params.get("q")}</p> : null}
-
+      <form>
+      <label for="publisher">Choose publisher:</label>
+        <select name="publisher" id="publisher">
+          <option value="1">Nintendo</option>
+          <option value="2">Pokemon</option>
+          <option value="3">Capcom</option>
+          <option value="4">From Software</option>
+        </select>
+        <button type="submit" value="Submit"/>
+      </form>
       {loading ? (
         <h1>Loading...</h1>
       ) : (
